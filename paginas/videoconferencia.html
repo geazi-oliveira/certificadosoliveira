@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Certificado Digital por Videoconferência | Emissão Online Segura</title>
+
+  <meta name="description" content="Emita ou renove seu certificado digital por videoconferência sem sair de casa. Processo rápido, seguro e válido em todo o Brasil. Atendimento por WhatsApp.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../imgs/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header>Certificado e-CNPJ A1 por R$ 120,00</header>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="../imgs/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    &#9776; <!-- Ícone hamburguer -->
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Página Inicial</a></li>
+    <li><a href="paginas/videoconferencia.html">Videoconferência</a></li>
+    <li><a href="../paginas/certificado-empresas.html">Certificado Para Empresas</a></li>
+    <li><a href="contador.html">Sou Contador</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <img src="../imgs/mulher-usando-smartphone-como-habito.jpg" alt="Emissão de certificado por videoconferência">
+    </div>
+    <div>
+      <h1>Emita seu Certificado Digital sem sair de casa</h1>
+      <p>
+        A videoconferência permite que você emita ou renove seu certificado digital rapidamente de forma 100% online.
+      </p>
+      <button class="btn btn-duvidas" onclick="abrirModalCertificado('duvidas', 'false', 'false')">Ir para o WhatsApp </button>
+
+    
+  </section>
+
+  <!-- QUEM PODE USAR -->
+  <section>
+    <h2>Quem pode emitir por videoconferência?</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>Pessoa Física</strong>
+      </div>
+      <div class="card">
+        <strong>Empresas e MEI</strong>
+      </div>
+      <div class="card">
+        <strong>Contadores</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="passos">
+    <h2>Como funciona a emissão</h2>
+    <div class="grid">
+      <div class="card">1️⃣ Escolha seu certificado</div>
+      <div class="card">2️⃣ Envie seus documentos</div>
+      <div class="card">3️⃣ Faça a videoconferência</div>
+      <div class="card">4️⃣ Certificado liberado</div>
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section>
+    <h2>Vantagens da Videoconferência</h2>
+    <div class="grid">
+      <div class="card">✅ Sem deslocamento</div>
+      <div class="card">✅ Emissão rápida</div>
+      <div class="card">✅ Segurança jurídica</div>
+      <div class="card">✅ Atendimento humano</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Dúvidas Frequentes</h2>
+
+    <details>
+      <summary>Preciso sair de casa?</summary>
+      <p>Não. Todo o processo é feito online por videochamada.</p>
+    </details>
+
+    <details>
+      <summary>A videoconferência é segura?</summary>
+      <p>Sim. Utilizamos validação de identidade e protocolos oficiais.</p>
+    </details>
+
+    <details>
+      <summary>Quanto tempo demora?</summary>
+      <p>Após a videoconferência, o certificado pode ser liberado em minutos.</p>
+    </details>
+
+  </section>
+
+  <!-- BOTÃO VOLTAR -->
+  <div class="voltar">
+    <a href="../index.html" title="Voltar para página inicial"><img src="../imgs/arrow_back_ios_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Voltar a pagina inicial"></a>
+    Página inicial
+    
+  </div>
+
+</main>
+
+<footer>
+  <div>Certificados Oliveira © 2025</div>
+  <div>WhatsApp: (15) 99244-2877</div>
+</footer>
+<div class="modal-fundo" id="modal">
+  <div class="modal-box">
+    <h3 id="modal-titulo">Certificado escolhido</h3>
+
+    <p id="modal-texto"></p>
+
+    <div class="modal-botoes">
+      <button onclick="fecharModal()">Cancelar</button>
+
+      <a 
+        id="btn-whats"
+        href="#"
+        target="_blank"
+        class="confirmar"
+      >
+        Ir para o WhatsApp
+      </a>
+    </div>
+
+    <!-- BOTÃO MOSTRAR QR -->
+    <div   style="margin-top: 20px; text-align: center;">
+      <button id="qr-code" onclick="mostrarQR()">Estou no computador – Prefiro QR Code</button>
+    </div>
+
+    <!-- ÁREA DO QR -->
+    <div id="area-qr" style="display:none; margin-top:20px; text-align:center;">
+      <p>Escaneie para abrir no celular:</p>
+      <img id="qr-img" src="" alt="QR Code do WhatsApp">
+    </div>
+  </div>
+</div>
+
+<div class="whatsapp-float">
+  <button class="whats-btn" onclick="toggleWhatsBox()">
+    <img src="../imgs/whatsApp-ico.png" alt="WhatsApp">
+  </button>
+
+  <div class="whats-box" id="whatsBox">
+    <div class="whats-header">
+      <h4>Fale conosco</h4>
+      <button class="close-whats" onclick="fecharWhatsBox()">✕</button>
+    </div>
+
+    <textarea
+      id="whatsMessage"
+      placeholder="Digite sua mensagem..."
+    ></textarea>
+
+    <div class="whats-actions">
+      <button onclick="enviarWhats()">Enviar</button>
+      <button class="outline" onclick="gerarQRWhats()">QR Code</button>
+    </div>
+
+    <div id="whatsQR" class="whats-qr">
+      <p>Escaneie no celular:</p>
+      <img id="qrWhatsImg" src="" alt="QR Code WhatsApp">
+    </div>
+
+    <button class="cancelar-whats" onclick="fecharWhatsBox()">
+      Cancelar
+    </button>
+  </div>
+</div>
+<script src="../js/script.js"></script>
+</body>
+</html>

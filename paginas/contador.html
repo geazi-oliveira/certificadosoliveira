@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parceria para Contadores | Indicação de Certificado Digital</title>
+
+  <meta name="description" content="Contador, indique seus clientes para emissão de certificado digital. Atendimento direto com a Certificados Oliveira, rápido e seguro.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../imgs/logo.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>Parceria para Contadores</header>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="../imgs/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    &#9776; <!-- Ícone hamburguer -->
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Página Inicial</a></li>
+    <li><a href="videoconferencia.html">Videoconferência</a></li>
+    <li><a href="certificado-empresas.html">Certificado Para Empresas</a></li>
+    <li><a href="contador.html">Sou Contador</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="apresentacao">
+  <h2>Você indica. Nós atendemos.</h2>
+  <p>
+    Como contador, você não precisa se envolver no atendimento.
+    Basta indicar seus clientes para a Certificados Oliveira.
+    Nós cuidamos de todo o processo de emissão do certificado digital.
+  </p>
+
+  <button
+    class="btn btnContador"
+    style="margin-top:20px;"
+    onclick="abrirModalCertificado(
+      'Você está prestes a indicar um cliente',
+      'valores conforme certificado',
+      true
+    )"
+  >
+    Quero indicar meus clientes
+  </button>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="certificados">
+  <h2>Por que indicar seus clientes?</h2>
+
+  <div class="produtos">
+
+    <div class="card-produto">
+      <h3>Simplificação</h3>
+      <p>
+       Tentamos simplificar o atendimento do início ao fim.
+      </p>
+    </div>
+
+    <div class="card-produto">
+      <h3>Mais Tempo</h3>
+      <p>
+        Você elimina dúvidas e retrabalho relacionados ao certificado digital.
+      </p>
+    </div>
+
+    <div class="card-produto">
+      <h3>Processo Seguro</h3>
+      <p>
+        Emissão dentro das normas do ITI e validade jurídica garantida.
+      </p>
+    </div>
+
+    <div class="card-produto">
+      <h3>Agilidade</h3>
+      <p>
+        Seu cliente é atendido rapidamente.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="como-funciona">
+  <h2>Como funciona a indicação</h2>
+
+  <div class="grid">
+    <div class="card">1️⃣ Você indica o cliente</div>
+    <div class="card">2️⃣ Entramos em contato com ele</div>
+    <div class="card">3️⃣ Validamos o pedido</div>
+    <div class="card">4️⃣ Certificado emitido</div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="apresentacao">
+  <h2>Indique com tranquilidade</h2>
+  <p>
+    Seu cliente resolve o certificado digital sem complicação.
+  </p>
+
+  <button
+    class="btn"
+    onclick="abrirModalCertificado(
+      'Você está prestes a indicar um cliente',
+      'valores conforme certificado',
+      true
+    )"
+  >
+    Indicar cliente agora
+  </button>
+</section>
+
+<!-- MODAL -->
+<div class="modal-fundo" id="modal">
+  <div class="modal-box">
+    <h3 id="modal-titulo">Indicação de Cliente</h3>
+
+    <p id="modal-texto"></p>
+
+    <div class="modal-botoes">
+      <button onclick="fecharModal()">Cancelar</button>
+
+      <a
+        id="btn-whats"
+        href="#"
+        target="_blank"
+        class="confirmar"
+      >
+        Ir para o WhatsApp
+      </a>
+    </div>
+
+    <div style="margin-top:20px;text-align:center;">
+      <button onclick="mostrarQR()">
+        Estou no computador – Prefiro QR Code
+      </button>
+    </div>
+
+    <div id="area-qr" style="display:none;margin-top:20px;text-align:center;">
+      <p>Escaneie para abrir no celular:</p>
+      <img id="qr-img" src="" alt="QR Code WhatsApp" style="max-width:160px;">
+    </div>
+  </div>
+</div>
+<div class="voltar">
+    <a href="../index.html" title="Voltar para página inicial"><img src="../imgs/arrow_back_ios_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Voltar a pagina inicial"></a>
+    Página inicial
+    
+  </div>
+<footer>
+  <div>Certificados Oliveira © 2025</div>
+  <div id="logo"><img src="../imgs/logo.png" alt="logo"></div>
+  <div>WhatsApp: (15) 99244-2877</div>
+</footer>
+
+<div class="whatsapp-float">
+  <button class="whats-btn" onclick="toggleWhatsBox()">
+    <img src="../imgs/whatsApp-ico.png" alt="WhatsApp">
+  </button>
+
+  <div class="whats-box" id="whatsBox">
+    <div class="whats-header">
+      <h4>Fale conosco</h4>
+      <button class="close-whats" onclick="fecharWhatsBox()">✕</button>
+    </div>
+
+    <textarea
+      id="whatsMessage"
+      placeholder="Digite sua mensagem..."
+    ></textarea>
+
+    <div class="whats-actions">
+      <button onclick="enviarWhats()">Enviar</button>
+      <button class="outline" onclick="gerarQRWhats()">QR Code</button>
+    </div>
+
+    <div id="whatsQR" class="whats-qr">
+      <p>Escaneie no celular:</p>
+      <img id="qrWhatsImg" src="" alt="QR Code WhatsApp">
+    </div>
+
+    <button class="cancelar-whats" onclick="fecharWhatsBox()">
+      Cancelar
+    </button>
+  </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

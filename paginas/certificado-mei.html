@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Certificado Digital para MEI | e-CNPJ A1 – Emissão Rápida</title>
+
+  <meta name="description" content="Certificado Digital para MEI com emissão rápida. Ideal para NF-e, gov.br e obrigações fiscais. Atendimento por WhatsApp.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../imgs/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header>Certificado Digital para MEI</header>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="../imgs/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Página Inicial</a></li>
+    <li><a href="videoconferencia.html">Videoconferência</a></li>
+    <li><a href="certificado-empresas.html">Certificado Para Empresas</a></li>
+    <li><a href="contador.html">Contador</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="apresentacao">
+  <h2>Certificado Digital para MEI</h2>
+  <p>
+    O certificado digital para MEI é obrigatório para emitir notas fiscais,
+    acessar o gov.br, cumprir obrigações fiscais e assinar documentos
+    eletronicamente com segurança.
+  </p>
+</section>
+
+<!-- PRODUTO -->
+<section class="certificados">
+  <h2>Certificado indicado para MEI</h2>
+
+  <div class="produtos" style="max-width:420px;">
+    <div class="card-produto">
+      <h3>e-CNPJ A1 – MEI</h3>
+
+      <img src="../imgs/conceito-de-felicidade-bem-estar-e-confianca-mulher-afro-americana-atraente-alegre-corte-de-cabelo-encaracolado-peito-de-bracos-cruzados-em-pose-poderosa-e-segura-sorrindo-determinado-usar-sueter-amarelo.jpg" alt="Certificado digital para MEI">
+
+      <ul>
+        <li>Ideal para MEI</li>
+        <li>Armazenado no computador</li>
+        <li>Emissão rápida</li>
+        <li>Uso em NF-e e gov.br</li>
+        <li>Validade: 12 meses</li>
+      </ul>
+
+      <div class="preco">R$ 120,00</div>
+
+      <button
+        class="btn"
+        onclick="abrirModalCertificado(
+          'e-CNPJ A1 para MEI',
+          '120,00',
+          '12 meses'
+        )"
+      >
+        Contratar agora
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="como-funciona">
+  <h2>Como funciona</h2>
+
+  <div class="etapas">
+    <div class="etapa">Escolha o certificado para MEI</div>
+    <div class="etapa">Fale com nosso atendimento</div>
+    <div class="etapa">Envie seus documentos</div>
+    <div class="etapa">Faça a validação</div>
+    <div class="etapa">Certificado liberado</div>
+  </div>
+</section>
+
+<!-- DÚVIDAS ESPECÍFICAS -->
+<section class="duvidas">
+  <h2>Dúvidas frequentes do MEI</h2>
+
+  <div class="faq">
+    <details>
+      <summary>MEI é obrigado a ter certificado digital?</summary>
+      <p>
+        Em muitos casos, sim. Principalmente para emissão de nota fiscal,
+        acesso a sistemas do governo e cumprimento de obrigações fiscais.
+      </p>
+    </details>
+
+    <details>
+      <summary>Posso usar certificado de CPF?</summary>
+      <p>
+        Não. Para atividades do MEI, o certificado correto é o
+        <strong>e-CNPJ</strong>.
+      </p>
+    </details>
+
+    <details>
+      <summary>Quanto tempo demora para emitir?</summary>
+      <p>
+        Após o envio dos documentos e a validação, a emissão costuma ser rápida.
+      </p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div>Certificados Oliveira © 2025</div>
+  <div id="logo"><img src="../imgs/logo.png" alt="logo"></div>
+  <div>WhatsApp: (15) 99244-2877</div>
+</footer>
+
+<!-- MODAL (REUTILIZADO) -->
+<div class="modal-fundo" id="modal">
+  <div class="modal-box">
+    <h3 id="modal-titulo">Certificado escolhido</h3>
+
+    <p id="modal-texto"></p>
+
+    <div class="modal-botoes">
+      <button onclick="fecharModal()">Cancelar</button>
+
+      <a
+        id="btn-whats"
+        href="#"
+        target="_blank"
+        class="confirmar"
+      >
+        Ir para o WhatsApp
+      </a>
+    </div>
+
+    <div style="margin-top:20px; text-align:center;">
+      <button id="qr-code" onclick="mostrarQR()">
+        Estou no computador – Prefiro QR Code
+      </button>
+    </div>
+
+    <div id="area-qr" style="display:none; margin-top:20px; text-align:center;">
+      <p>Escaneie para abrir no celular:</p>
+      <img id="qr-img" src="" alt="QR Code do WhatsApp">
+    </div>
+  </div>
+</div>
+
+<div class="whatsapp-float">
+  <button class="whats-btn" onclick="toggleWhatsBox()">
+    <img src="../imgs/whatsApp-ico.png" alt="WhatsApp">
+  </button>
+
+  <div class="whats-box" id="whatsBox">
+    <div class="whats-header">
+      <h4>Fale conosco</h4>
+      <button class="close-whats" onclick="fecharWhatsBox()">✕</button>
+    </div>
+
+    <textarea
+      id="whatsMessage"
+      placeholder="Digite sua mensagem..."
+    ></textarea>
+
+    <div class="whats-actions">
+      <button onclick="enviarWhats()">Enviar</button>
+      <button class="outline" onclick="gerarQRWhats()">QR Code</button>
+    </div>
+
+    <div id="whatsQR" class="whats-qr">
+      <p>Escaneie no celular:</p>
+      <img id="qrWhatsImg" src="" alt="QR Code WhatsApp">
+    </div>
+
+    <button class="cancelar-whats" onclick="fecharWhatsBox()">
+      Cancelar
+    </button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

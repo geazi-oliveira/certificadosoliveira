@@ -1,0 +1,213 @@
+<!-- salvar como paginas/cnpj.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Certificado e-CNPJ A1 | Certificados Oliveira</title>
+  <meta name="description" content="Emita e-CNPJ A1 e A3 com atendimento por WhatsApp. Solução rápida e segura para MEI, empresas e contadores." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../imgs/logo.ico" type="image/x-icon">
+</head>
+<body>
+
+  <header>Certificado e-CNPJ A1 por R$ 120,00</header>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="../imgs/logo.png" alt="logo">
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    &#9776; <!-- Ícone hamburguer -->
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Página Inicial</a></li>
+    <li><a href="videoconferencia.html">Videoconferência</a></li>
+    <li><a href="certificado-empresas.html">Certificado Para Empresas</a></li>
+    <li><a href="contador.html">Sou Contador</a></li>
+  </ul>
+</nav>
+  <!-- APRESENTAÇÃO -->
+  <section class="apresentacao" style="margin-top:28px;">
+    <h2>Certificados Oliveira</h2>
+    <p>Emita seu e-CNPJ com rapidez e segurança. Atendimento por WhatsApp para MEI, empresas e escritórios contábeis em todo o Brasil.</p>
+  </section>
+
+  <!-- PRODUTOS (CNPJ) -->
+  <section class="certificados empresa">
+    <h2>Certificados e-CNPJ</h2>
+
+    <div class="produtos produtos-empresas">
+
+      <div class="card-produto produto-cnpj">
+        <h3>e-CNPJ A1</h3>
+        <img src="../imgs/e-CNPJ.png" alt="e-CNPJ A1">
+        <ul>
+          <li>Armazenado no computador</li>
+          <li>Validade: 12 meses</li>
+        </ul>
+        <div class="preco">R$ 120,00</div>
+        <button class="btn" onclick="abrirModalCertificado('e-CNPJ A1','120,00','12 meses')">Comprar</button>
+      </div>
+
+      <div class="card-produto produto-cnpj">
+        <h3>e-CNPJ A3 (Token/Cartão)</h3>
+        <img src="../imgs/e-cnpj-a3.jpg" alt="e-CNPJ A3">
+        <ul>
+          <li>Armazenado em token ou cartão</li>
+          <li>Validade: 12 a 36 meses</li>
+        </ul>
+        <div class="preco">R$ 189,90</div>
+        <button class="btn" onclick="abrirModalCertificado('e-CNPJ A3','189,90','12 a 36 meses')">Comprar</button>
+      </div>
+
+      
+
+    </div>
+
+    <div style="text-align:center; margin-top:18px;">
+      <button class="btn outros-certificados-btn" onclick="abrirModalOutroCertificado()">Outro certificado</button>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES -->
+  <section class="certificados">
+    <div class="solucoes-certificacao">
+      <h2>Soluções em certificação digital</h2>
+      <div class="complementos">
+        <div class="imagens">
+          <div class="item-complementos">
+            <a href="../paginas/videoconferencia.html">
+                <div class="img-complementos"><img src="../imgs/mulher-usando-smartphone-como-habito.jpg" alt="videoconferência"></div>
+            </a>
+          </div>
+          <p>Atendimento por Videoconferência</p>
+        </div>
+
+        <div class="imagens">
+          <div class="item-complementos">
+            <a href="../paginas/certificado-empresas.html">
+                <div class="img-complementos"><img src="../imgs/o-negocio-empresario-bem-sucedido-trabalhando-com-laptop-usando-computador-e-sorrindo-em-pe.jpg" alt="empresa"></div>
+            </a>
+          </div>
+          <p>Certificado para empresas</p>
+        </div>
+
+        <div class="imagens">
+          <div class="item-complementos">
+            <a href="../paginas/certificado-nuvem.html">
+              <div class="img-complementos"><img src="../imgs/afro-americano-alegre-com-cabelo-crespo-segurando-um-smartphone-moderno-sorriso-feliz.jpg" alt="nuvem"></div>
+                        </div>
+            </a>
+          <p>Certificado em nuvem</p>
+        </div>
+
+        <div class="imagens">
+          <div class="item-complementos">
+            <a href="../paginas/certificado-mei.html">
+              <div class="img-complementos"><img src="../imgs/conceito-de-felicidade-bem-estar-e-confianca-mulher-afro-americana-atraente-alegre-corte-de-cabelo-encaracolado-peito-de-bracos-cruzados-em-pose-poderosa-e-segura-sorrindo-determinado-usar-sueter-amarelo.jpg" alt="MEI"></div>
+                        </div>
+            </a>
+          <p>Certificado para MEI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="como-funciona">
+    <h2>Como funciona a emissão</h2>
+    <div class="grid">
+      <div class="card">1️⃣ Escolha seu certificado</div>
+      <div class="card">2️⃣ Envie seus documentos</div>
+      <div class="card">3️⃣ Faça a videoconferência</div>
+      <div class="card">4️⃣ Certificado liberado</div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="duvidas">
+    <h2>Dúvidas frequentes</h2>
+    <div class="faq">
+      <details><summary>O que é um certificado digital?</summary><p>É sua identidade digital para assinar documentos e acessar sistemas do governo.</p></details>
+      <details><summary>Documentos para empresa?</summary><p>CNPJ, contrato social, documentos dos sócios e comprovante de endereço.</p></details>
+      <details><summary>Como funciona a videoconferência?</summary><p>Validação por agente autorizado em chamada online.</p></details>
+    </div>
+  </section>
+ <div class="voltar">
+    <a href="../index.html" title="Voltar para página inicial"><img src="../imgs/arrow_back_ios_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="Voltar a pagina inicial"></a>
+    Página inicial
+    
+  </div>
+  <!-- RODAPÉ -->
+  <footer>
+    <div>Certificados Oliveira © 2025</div>
+    <div id="logo"><img src="../imgs/logo.png" alt="logo"></div>
+    <div>WhatsApp: (15) 99244-2877</div>
+  </footer>
+
+ 
+
+  <!-- MODAL (REUTILIZÁVEL) -->
+  <div class="modal-fundo" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <h3 id="modal-titulo">Certificado escolhido</h3>
+
+      <p id="modal-texto" style="text-align:left;"></p>
+
+      <div class="modal-botoes" style="justify-content:center;">
+        <button onclick="fecharModal()" aria-label="Cancelar">Cancelar</button>
+
+        <a id="btn-whats" href="#" target="_blank" class="confirmar" aria-label="Ir para o WhatsApp">Ir para o WhatsApp</a>
+      </div>
+
+      <div style="margin-top:16px; text-align:center;">
+        <button id="btn-show-qr" onclick="mostrarQR()">Estou no computador – Prefiro QR Code</button>
+      </div>
+
+      <div id="area-qr" style="display:none; margin-top:14px; text-align:center;">
+        <p>Escaneie para abrir no celular:</p>
+        <img id="qr-img" src="" alt="QR Code do WhatsApp" style="width:min(160px,60vw);height:auto;border-radius:8px;background:#fff;padding:8px;">
+      </div>
+    </div>
+  </div>    
+
+ <div class="whatsapp-float">
+  <button class="whats-btn" onclick="toggleWhatsBox()">
+    <img src="../imgs/whatsApp-ico.png" alt="WhatsApp">
+  </button>
+
+  <div class="whats-box" id="whatsBox">
+    <div class="whats-header">
+      <h4>Fale conosco</h4>
+      <button class="close-whats" onclick="fecharWhatsBox()">✕</button>
+    </div>
+
+    <textarea
+      id="whatsMessage"
+      placeholder="Digite sua mensagem..."
+    ></textarea>
+
+    <div class="whats-actions">
+      <button onclick="enviarWhats()">Enviar</button>
+      <button class="outline" onclick="gerarQRWhats()">QR Code</button>
+    </div>
+
+    <div id="whatsQR" class="whats-qr">
+      <p>Escaneie no celular:</p>
+      <img id="qrWhatsImg" src="" alt="QR Code WhatsApp">
+    </div>
+
+    <button class="cancelar-whats" onclick="fecharWhatsBox()">
+      Cancelar
+    </button>
+  </div>
+</div>
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
